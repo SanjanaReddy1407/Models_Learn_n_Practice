@@ -6,12 +6,9 @@ This repository contains a complete hands-on implementation of **Simple Linear R
 
 ## 📌 Table of Contents
 - [What is Simple Linear Regression?](#-what-is-simple-linear-regression)
-- [How Does it Work?](#-how-does-it-work)
 - [Evaluation Metrics](#-evaluation-metrics)
 - [Project Workflow](#-project-workflow)
 - [Model Performance](#-model-performance)
-- [Custom Prediction Function](#-custom-prediction-function)
-- [Key Learnings & Edge Cases](#-key-learnings--edge-cases)
 
 ---
 
@@ -32,13 +29,6 @@ Where:
 
 ---
 
-## ⚙️ How Does It Work?
-
-1. **Residual Error:** The difference between actual value ($y$) and predicted value ($\hat{y}$):
-   $$\text{Residual} = y - \hat{y}$$
-2. **Cost Function (Mean Squared Error - MSE):** The model minimizes the average squared difference between actual and predicted points using **Ordinary Least Squares (OLS)**.
-
----
 
 ## 📊 Evaluation Metrics
 
@@ -65,8 +55,8 @@ To evaluate regression performance, we use:
 ## 🚀 Model Performance
 
 For the **Study Hours vs Exam Score** dataset:
-* **$R^2$ Score:** `~0.9903` (Model explains ~99.03% of data variance)
-* **RMSE:** `~1.59` (Average prediction error is ~1.59 marks)
+* **$R^2$ Score**
+* **RMSE**
 
 ---
 
