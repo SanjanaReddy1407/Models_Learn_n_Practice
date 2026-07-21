@@ -38,7 +38,7 @@ To evaluate regression performance, we use:
 | :--- | :--- | :--- |
 | **MSE** (Mean Squared Error) | $\frac{1}{n}\sum(y_i - \hat{y}_i)^2$ | Penalizes larger errors by squaring them. |
 | **RMSE** (Root Mean Squared Error) | $\sqrt{\text{MSE}}$ | Brings error back to original target units for easy interpretation. |
-| **$R^2$ Score** | ${1 - \frac{\text{SS}_{\text{res}}}{\text{SS}_{\text{tot}}}}$ | Explains the percentage of variance captured by the model (0 to 1). |
+| **$R^2$ Score** | 1 - (SS_res / SS_tot) | Explains the percentage of variance captured by the model (0 to 1). |
 
 ---
 
