@@ -59,7 +59,3 @@ For the **Study Hours vs Exam Score** dataset:
 * **RMSE**
 
 ---
-
-
-check_model()
-
