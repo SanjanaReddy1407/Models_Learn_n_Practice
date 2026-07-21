@@ -70,25 +70,5 @@ For the **Study Hours vs Exam Score** dataset:
 
 ---
 
-## 💻 Custom Prediction Function
-
-An interactive Python function allows real-time predictions based on custom user input:
-
-```python
-import pandas as pd
-
-def check_model():
-    sh = float(input("Enter study hours: "))
-    data = pd.DataFrame({'StudyHours': [sh]})
-    
-    # Extract prediction cleanly
-    pred = model.predict(data).item()
-    
-    # Cap score at realistic limit (100)
-    final_score = min(pred, 100.0)
-    
-    print("-" * 45)
-    print(f"Predicted exam score for {sh} study hours: {final_score:.2f}")
-    print("-" * 45)
 
 check_model()
