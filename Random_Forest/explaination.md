@@ -67,3 +67,34 @@ Instead of relying on a single decision tree (which is prone to overfitting and 
 1. **Bootstrap Sampling:** Creates multiple subsets of the original data with replacement; each tree trains on a distinct subset.
 2. **Random Feature Selection:** Evaluates only a random subset of features at each split node.
 3. **Majority Voting:** Aggregates predictions across all individual trees; the majority vote determines the final patient prediction.
+
+---
+
+## Tech Stack & Techniques
+
+* **Language:** Python (v3.12+)[cite: 1]
+* **Data Manipulation:** Pandas, NumPy[cite: 1]
+* **Machine Learning:** Scikit-Learn (`sklearn`)[cite: 1]
+* **Data Resampling:** Imbalanced-Learn (`imblearn`)
+* **Visualization:** Matplotlib, Seaborn
+
+### Models Trained
+* **Logistic Regression:** Baseline interpretable linear model where coefficients correspond to clinical odds ratios.
+* **Random Forest Classifier (`n_estimators=100`):** Ensemble tree model capable of learning non-linear, high-order feature interactions (e.g., age, BMI, and glucose combinations)[cite: 1].
+
+---
+
+## Model Evaluation & Confusion Matrix
+
+### Confusion Matrix Breakdown
+The **Confusion Matrix** evaluates actual ground-truth patient labels against model predictions[cite: 1]:
+
+| | **Predicted: Healthy (0)** | **Predicted: Diabetic (1)** |
+| :--- | :--- | :--- |
+| **Actual: Healthy (0)** | **True Negative (TN)** <br> *(Correctly identified healthy)* | **False Positive (FP)** <br> *(False Alarm)* |
+| **Actual: Diabetic (1)** | **False Negative (FN)** <br> *(Missed sick patient)* | **True Positive (TP)** <br> *(Correctly identified sick)* |
+
+#### Matrix Results
+```python
+[[166,  21],
+ [ 19, 162]]
