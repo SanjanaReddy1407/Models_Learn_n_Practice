@@ -48,20 +48,12 @@ The primary objective of this project is to build, evaluate, and interpret a rel
 
 ---
 
-## Key Measures Taken & Clinical Considerations
+## 🌟 Key Features and Measures Taken & Clinical Considerations
 
 * **Preventing Data Leakage with SMOTE:** Applied Synthetic Minority Over-sampling Technique (SMOTE) strictly to the training split ($X_{\text{train}}, Y_{\text{train}}$) after performing the train-test split. Applying SMOTE before splitting introduces synthetic information derived from test records into training, leading to artificially inflated, unreliable metrics.
 * **Prioritizing Sensitivity (Recall):** In disease screening, **False Negatives are catastrophic** because a missed diagnosis delays life-saving medical intervention. The pipeline prioritizes maximizing Recall to identify as many true positive cases as possible.
 * **Feature Schema Matching:** Standardized runtime inputs into a `pandas.DataFrame` schema matching `X.columns` to prevent feature swapping errors during single-patient predictions[cite: 1].
 
----
-# 🩺 Clinical Decision Support System (CDSS)
-
-An advanced, high-performance C++ clinical decision support system designed to predict health indicators and assess mental health risk using lifestyle vitals and medical parameters. The system leverages hierarchical decision trees and efficient session-based data management to deliver fast, rule-based diagnostic guidance.
-
----
-
-## 🌟 Key Features
 
 - **Lifestyle & Vitals Analysis:** Evaluates key physiological and behavioral indicators (e.g., heart rate, sleep duration, stress levels, physical activity) to assess risk factors.
 - **Hierarchical Decision Trees:** Implements custom decision tree logic in C++ for transparent, rule-based medical expert system reasoning.
@@ -84,7 +76,7 @@ An advanced, high-performance C++ clinical decision support system designed to p
 
 ## 📐 Project Structure
 
-```text
+
 ├── include/
 │   ├── DecisionTree.hpp     # Hierarchical decision tree engine
 │   ├── ModelSession.hpp     # Session management & risk prediction engine
