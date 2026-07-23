@@ -77,6 +77,7 @@ The primary objective of this project is to build, evaluate, and interpret a rel
 ## 📐 Project Structure
 
 
+```text
 ├── include/
 │   ├── DecisionTree.hpp     # Hierarchical decision tree engine
 │   ├── ModelSession.hpp     # Session management & risk prediction engine
@@ -90,7 +91,7 @@ The primary objective of this project is to build, evaluate, and interpret a rel
 │   └── test_decision.cpp    # Unit tests for prediction logic
 ├── CMakeLists.txt
 └── README.md
-
+````
 
 
 ## Understanding Random Forest
