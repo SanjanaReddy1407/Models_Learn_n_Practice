@@ -13,8 +13,7 @@ This project addresses key healthcare ML challenges—such as handling class imb
 4. [Understanding Random Forest](#understanding-random-forest)
 5. [Tech Stack & Techniques](#tech-stack--techniques)
 6. [Model Evaluation & Confusion Matrix](#model-evaluation--confusion-matrix)
-7. [Visualizations & Plots](#visualizations--plots)
-8. [Setup & Usage](#setup--usage)
+
 
 ---
 
@@ -41,8 +40,8 @@ The primary objective of this project is to build, evaluate, and interpret a rel
 ### 3. Feature Alignment & Interactive Predictor
 * Built a terminal-based interactive clinical prediction function (`predict_diabetes()`).
 * Ensured strict column sequence alignment between user inputs and the training feature matrix:
-  $$\text{Feature Order: } [\text{gender}, \text{age}, \text{hypertension}, \text{heart\_disease}, \text{smoking\_history}, \text{bmi}, \text{HbA1c\_level}, \text{blood\_glucose\_level}]$$
-
+**Feature Order:** `gender` $\rightarrow$ `age` $\rightarrow$ `hypertension` $\rightarrow$ `heart_disease` $\rightarrow$ `smoking_history` $\rightarrow$ `bmi` $\rightarrow$ `HbA1c_level` $\rightarrow$ `blood_glucose_level`
+  
 ### 4. Cross-Validation & Metric Evaluation
 * Implemented **Stratified $K$-Fold Cross-Validation** to ensure every fold maintains equal target class proportions.
 * Evaluated models across clinical metrics: Sensitivity/Recall, Precision, F1-Score, and Confusion Matrix[cite: 1].
