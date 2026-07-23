@@ -55,6 +55,51 @@ The primary objective of this project is to build, evaluate, and interpret a rel
 * **Feature Schema Matching:** Standardized runtime inputs into a `pandas.DataFrame` schema matching `X.columns` to prevent feature swapping errors during single-patient predictions[cite: 1].
 
 ---
+# 🩺 Clinical Decision Support System (CDSS)
+
+An advanced, high-performance C++ clinical decision support system designed to predict health indicators and assess mental health risk using lifestyle vitals and medical parameters. The system leverages hierarchical decision trees and efficient session-based data management to deliver fast, rule-based diagnostic guidance.
+
+---
+
+## 🌟 Key Features
+
+- **Lifestyle & Vitals Analysis:** Evaluates key physiological and behavioral indicators (e.g., heart rate, sleep duration, stress levels, physical activity) to assess risk factors.
+- **Hierarchical Decision Trees:** Implements custom decision tree logic in C++ for transparent, rule-based medical expert system reasoning.
+- **Mental Health Risk Assessment:** Evaluates mental well-being and stress severity via the specialized `ModelSession` class.
+- **Low-Latency C++ Engine:** Engineered for speed, minimal memory overhead, and deterministic execution without heavy external dependencies.
+- **Auditable Diagnostic Paths:** Generates interpretable evaluation logs showing the exact decision paths used for predictions.
+
+---
+
+## 🛠️ Tech Stack & Architecture
+
+| Layer | Technology / Module | Description |
+| :--- | :--- | :--- |
+| **Language** | C++17 / C++20 | Core logic, data structures, and execution engine |
+| **Decision Engine** | Hierarchical Decision Trees | Custom rule-based classification nodes |
+| **Session Manager** | `ModelSession` | Handles user vitals session state, input parsing, and inference execution |
+| **Build System** | CMake / g++ | Cross-platform build configuration |
+
+---
+
+## 📐 Project Structure
+
+```text
+├── include/
+│   ├── DecisionTree.hpp     # Hierarchical decision tree engine
+│   ├── ModelSession.hpp     # Session management & risk prediction engine
+│   ├── Vitals.hpp            # Lifestyle & medical vitals data structure
+│   └── Utils.hpp             # Helper logging & input validation functions
+├── src/
+│   ├── DecisionTree.cpp
+│   ├── ModelSession.cpp
+│   └── main.cpp             # CLI driver / entry point
+├── tests/
+│   └── test_decision.cpp    # Unit tests for prediction logic
+├── CMakeLists.txt
+└── README.md
+
+
 
 ## Understanding Random Forest
 
